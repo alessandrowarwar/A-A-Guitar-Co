@@ -1,0 +1,36 @@
+.title {
+    text-align: center;
+    text-decoration:dashed
+}
+
+.title-description {
+    text-align: center;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #121c55
+}
+.navbar {
+    background: #000000;
+    border-bottom: 1px solid #fff;
+}
+.nav-link, .navbar-brand {
+    color: #fff !important;
+    cursor:pointer;
+}
+
+.nav-link {
+     margin-right: 1em !important
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
