@@ -17,6 +17,7 @@ body {
 .navbar {
     background: #000000;
     border-bottom: 1px solid #fff;
+    height: 100px;
 }
 .nav-link, .navbar-brand {
     color: #fff !important;
