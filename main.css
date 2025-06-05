@@ -8,6 +8,7 @@
     text-align: center;
     font-size: 1.2em;
     color: #B8860B;
+    font-weight: bold;
 }
 
 body {
@@ -36,4 +37,8 @@ body {
 
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.navbar-brand img {
+    margin-top: 10px;
 }
