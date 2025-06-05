@@ -1,26 +1,28 @@
 .title {
     text-align: center;
-    text-decoration:dashed
+    text-decoration:dashed;
+    color: #121c55;
 }
 
 .title-description {
     text-align: center;
     font-size: 1.2em;
-    color: #000000;
+    color: #B8860B;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: #121c55
+    background: #f8f9fa;
+    color: #222;
 }
 .navbar {
-    background: #000000;
-    border-bottom: 1px solid #fff;
+    background: #121c55;
+    border-bottom: 3px solid #FFD700;
     height: 100px;
 }
 .nav-link, .navbar-brand {
-    color: #fff !important;
+    color: #FFD700 !important;
     cursor:pointer;
 }
 
@@ -29,7 +31,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #000 !important;
+    color: #B22222 !important;
 }
 
 .navbar-collapse {
