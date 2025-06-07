@@ -66,6 +66,7 @@ body {
     color: #222;
 }
 
+/* This code is for the welcome message and overview description */
 .welcome-section {
     background: rgba(18, 28, 85, 0.85);
     color: #FFD700;
@@ -76,14 +77,12 @@ body {
     padding: 2em 2.5em;
     text-align: center;
 }
-
 .welcome-heading {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 1em;
     color: #FFD700;
 }
-
 .welcome-overview {
     font-size: 1.15em;
     color: #fffbe6;
