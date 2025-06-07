@@ -1,3 +1,4 @@
+/* This code is for the title and description on the home page */
 .title {
     display: block;
     text-align: center;
@@ -11,7 +12,7 @@
     font-size: 2em;
     max-width: 700px;
 }
-
+/* This code is for the title description on the home page */
 .title-description {
     display: block;
     text-align: center;
@@ -25,35 +26,44 @@
     font-size: 1.2em;
     max-width: 600px;
 }
-
+/* This code is for the navigation bar */
 body {
     padding: 0;
     margin: 0;
     background: #f8f9fa;
     color: #222;
 }
+/* This code is for the navigation bar */
 .navbar {
     background: #121c55;
     border-bottom: 3px solid #FFD700;
     height: 100px;
 }
+/* This code is for the navigation bar links */
 .nav-link, .navbar-brand {
     color: #FFD700 !important;
-    cursor:pointer;
+    cursor: pointer;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-left: 1em;
+    padding-right: 1em;
 }
-
+/* This code is for the navigation bar links when hovered */
 .nav-link {
      margin-right: 1em !important
 }
-
+/* This code is for the navigation bar links when hovered */
 .nav-link:hover {
-    color: #B22222 !important;
+    color: #ffffff !important;
 }
-
+/* This code is for the navigation bar links when active */
 .navbar-collapse {
     justify-content: flex-end;
 }
-
+/* This code is for the navigation bar brand */
 .navbar-brand img {
     margin-top: 10px;
 }
