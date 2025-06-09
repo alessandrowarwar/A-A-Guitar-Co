@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <head>
+   <style>
+       .contact-content {
+           background: rgba(18, 28, 85, 0.85);
+           color: #eeece2;
+           border-radius: 18px;
+           box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+           max-width: 800px;
+           margin: 1em auto; /* reduced top margin for better spacing */
+           padding: 2em 2.5em;
+           text-align: center;
+       }
+       .submit-btn {
+          background: #FFD700;
+          color: #121c55;
+          border: none;
+          border-radius: 12px;
+          padding: 0.6em 1.5em;
+          font-size: 1.1em;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+   </style>
     <title>A&A Guitar Co.</title>
     <link rel="stylesheet" href="main.css">
     <!-- Link to Google Fonts for Montserrat -->
@@ -9,9 +31,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <html>
-    <!-- Title and tagline -->
-<h1 class="title">Contact Page</h1>
-<p class="title-description">Contact Info Listed Below</p>
+  <!--  Title and tagline 
+<h1 class="title">Contact Page</h1>    *i think this is not needed for contact page*
+<p class="title-description">Contact Info Listed Below</p> -->
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md">
@@ -21,6 +43,7 @@
     </button>
     <div class="collapse navbar-collapse" id="main-navigation">
         <ul class="navbar-nav">
+            <!-- Navigation links -->
             <li class="nav-item">
                 <a class="nav-link" href="Main.html">Home</a>
             </li>
@@ -42,4 +65,14 @@
         </ul>
     </div>
 </nav>
+
+ <h3 class="contact-content">Contact Us</h3>
+    <div class="contact-content">
+        <p>Have questions? Feel free to get in touch:</p>
+        <br><input type="text" class="contactform-control" placeholder="Name" name=""></br>
+        <br><input type="email" class="contactform-control" placeholder="Email" name=""></br>
+        <br><textarea class="contactform-control" placeholder="Message" name="" rows="4"></textarea></br>
+        <br><button type="submit" class="submit-btn">Send</button></br>
+ </div>
+
 </html>

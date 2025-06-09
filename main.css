@@ -25,6 +25,7 @@
     font-weight: bold;
     font-size: 1.2em;
     max-width: 600px;
+    font-style:italic; 
 }
 /* This code is for the navigation bar */
 body {
@@ -99,3 +100,21 @@ body {
     line-height: 1.6;
     margin-bottom: 0;
 }
+
+.view-guitars-btn {
+    background: #FFD700;
+    color: #121c55;
+    border: none;
+    border-radius: 12px;
+    padding: 0.6em 1.5em;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-guitars-btn:hover {
+    background: #f0c040;
+}
+
+
+
