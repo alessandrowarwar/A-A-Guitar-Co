@@ -75,14 +75,15 @@ body {
     margin: 4em auto;
     padding: 1em;
     position: bottom;
-    background:rgba(18, 28, 85, 0.85);
-    width: 100%;
+    background:rgba(0, 0, 0, 0.85);
+    width: 1000px;
+    height: 200%;
 
 }
 
 
 .footer-title{
-    color: #333;
+    color: #ffffff;
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -92,7 +93,7 @@ body {
 }
 
 .footer-text {
-    color: #FFD700;
+    color: #ffffff;
     font-size: 1.1rem;
     text-align: center;
     margin: 0 auto;
