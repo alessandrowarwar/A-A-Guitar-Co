@@ -82,10 +82,12 @@ body {
 .footers{
     margin: 4em auto;
     padding: 1em;
-    position: relative;
+    position: bottom;
     background:rgba(18, 28, 85, 0.85);
+    width: 100%;
 
 }
+
 
 .footer-title{
     color: #333;
