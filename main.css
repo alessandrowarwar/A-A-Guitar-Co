@@ -76,3 +76,31 @@ body {
     background-size: cover;
     color: #222;
 }
+
+
+
+.footers{
+    margin: 4em auto;
+    padding: 1em;
+    position: relative;
+    background:rgba(18, 28, 85, 0.85);
+
+}
+
+.footer-title{
+    color: #333;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+    text-align: center;
+
+}
+
+.footer-text {
+    color: #FFD700;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
