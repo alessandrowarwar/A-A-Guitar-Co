@@ -71,10 +71,13 @@ body {
 
 
 
-.footers {
-    margin: 0 auto;
-    padding: 1em;
-    background:rgba(0, 0, 0, 0.85);
+.footer {
+   width: 100%; 
+   background: #121c55; 
+   color: #FFD700; 
+   padding: 2em 0; 
+   margin-top: 3em;
+   position: bottom;
 }
 
 .footer-row {
@@ -96,4 +99,13 @@ body {
     text-align: center;
     margin: 0 auto;
     max-width: 600px;
+}
+
+.footerDiv {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-wrap: wrap;
 }
