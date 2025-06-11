@@ -71,25 +71,23 @@ body {
 
 
 
-.footers{
-    margin: 4em auto;
+.footers {
+    margin: 0 auto;
     padding: 1em;
-    position: bottom;
     background:rgba(0, 0, 0, 0.85);
-    width: 1000px;
-    height: 200%;
-
 }
 
+.footer-row {
+    width:100%;
+}
 
-.footer-title{
+.footer-title {
     color: #ffffff;
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-transform: uppercase;
     text-align: center;
-
 }
 
 .footer-text {
