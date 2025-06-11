@@ -99,3 +99,18 @@ body {
     margin: 0 auto;
     max-width: 600px;
 }
+
+/* This code is for the background video on the homepage */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 1;
+    pointer-events: none;
+}
