@@ -28,6 +28,12 @@
     font-style:italic; 
 }
 
+.backgroundGradient{
+    background: linear-gradient(135deg, #1226d8, #685904);
+    display: flex;
+    flex-direction: column;
+}
+
 /* This code is for the navigation bar */
 .navbar {
     background: #121c55;

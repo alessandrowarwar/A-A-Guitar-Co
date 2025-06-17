@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <head>
     <title>A&A Guitar Co.</title>
+    <style>
+        .about-section {
+				background: rgba(18, 28, 85, 0.85);
+				color: #FFD700;
+				border-radius: 18px;
+				box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+				max-width: 800px;
+				margin: 8em auto 2em auto; /* increased top margin for centering */
+				padding: 2em 2.5em;
+				text-align: center;
+			}
+			.about-heading {
+				font-size: 2em;
+				font-weight: bold;
+				margin-bottom: 1em;
+				color: #FFD700;
+			}
+			.about-overview {
+				font-size: 1.15em;
+				color: #fffbe6;
+				line-height: 1.6;
+				margin-bottom: 0;
+			}
+    </style>
     <link rel="stylesheet" href="main.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -10,7 +34,7 @@
 </head>
 <html>
 
-<body>
+<body class="backgroundGradient">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="#"><img src="CompanyLogo.png" width="260px"></a>
@@ -40,6 +64,17 @@
             </ul>
         </div>
     </nav>
+
+
+    <!-- Main content -->
+    <div class="about-section">
+        <h1 class="about-heading">About Us</h1>
+        <p class="about-overview">Our journey began with a simple love for music and a commitment to excellence.</p>
+        <p class="about-overview">At A&A Guitar Co., we believe that every guitar tells a story. Each instrument is meticulously crafted by skilled artisans who pour their heart and soul into every detail. From the selection of premium woods to the final finish, our guitars are designed to deliver exceptional sound and playability.</p>
+        <p class="about-overview">We are dedicated to innovation and continuously strive to push the boundaries of guitar design. Whether you are a beginner or a seasoned professional, our diverse range of guitars caters to all styles and preferences.</p>
+        <p class="about-overview">Join us on this musical journey, and let our guitars be a part of your story.</p>
+
+    </div>
 
     <footer class="footer">
         <div class="footerDiv">
