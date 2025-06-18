@@ -46,6 +46,26 @@
                 -moz-column-count: 4;
                 column-count: 4;
             }
+            .founders-container {
+                display: flex;
+                justify-content: center;
+                gap: 2em;
+                margin-top: 2em;
+                flex-wrap: wrap;
+            }
+
+            .founderCard {
+                background: rgba(18, 28, 85, 0.85);
+                border-radius: 18px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+                padding: 2em 1em;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                width: 260px;
+                margin: 1em;
+            }
+            
     </style>    
     <link rel="stylesheet" href="main.css">
     <!-- Link to Google Fonts for Montserrat -->
@@ -95,21 +115,22 @@
         <p class="about-overview">We are dedicated to innovation and continuously strive to push the boundaries of guitar design. Whether you are a beginner or a seasoned professional, our diverse range of guitars caters to all styles and preferences.</p>
         <p class="about-overview">Join us on this musical journey, and let our guitars be a part of your story.</p>
     </div>
-
-    <div class="founderCard col-lg-3 col-md-3 col-sm-4 text-center">
-        <img class="card-img-top rounded-circle" src="#" alt="Card image">
-        <div class="founders-container">
-            <h4 class="card-title">Anthony Romaniello</h4>
-            <p class="card-text">Co-Founder</p>
+ 
+    <!-- Co-Founder Cards -->
+    <div class="founders-container">
+        <div class="founderCard">
+            <img src="founder1.jpg" alt="Founder 1" style="width:120px; border-radius:50%; margin-bottom:1em;">
+            <h3 style="color:#FFD700;">Anthony Romaniello</h3>
+            <p style="color:#fffbe6;">Co-Founder & Master Luthier<br>
+                Anthony brings 20+ years of guitar building experience and a passion for perfect tone.</p>
         </div>
-    </div>
-    <div class="founderCard col-lg-3 col-md-3 col-sm-4 text-center">
-        <img class="card-img-top rounded-circle" src="#" alt="Card image">
-        <div class="founders-container">
-            <h4 class="card-title">Alessandro Warwar</h4>
-            <p class="card-text">Co-Founder</p>
+        <div class="founderCard">
+            <img src="founder2.jpg" alt="Founder 2" style="width:120px; border-radius:50%; margin-bottom:1em;">
+            <h3 style="color:#FFD700;">Alessandro Warwar</h3>
+            <p style="color:#fffbe6;">Co-Founder & Designer<br>
+                Alessandro specializes in custom designs and ensures every guitar is a work of art.</p>
         </div>
-    </div>
+        </div>
 
     <footer class="footer">
         <div class="footerDiv">
