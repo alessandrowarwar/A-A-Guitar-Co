@@ -87,8 +87,34 @@
                 text-align: center;
                 margin-bottom: 0;
             }
+
+            /* CSS for Images */
+            .about-side-img {
+                position: fixed;
+                top: 50%;
+                width: 800px;
+                border-radius: 12px;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+
+            .about-side-img-left {
+                left: 0;
+                margin-left: 32px;   /* More space from the left edge */
+            }
+
+            .about-side-img-right {
+                right: 0;
+                margin-right: 32px;  /* More space from the right edge */
+            }
+
+            .about-content {
+                padding-left: 192px;   /* Match or slightly exceed image width + margin */
+                padding-right: 192px;
+            }
             
     </style>    
+    
     <link rel="stylesheet" href="main.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -128,6 +154,9 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Left side image -->
+    <img src="Hanging Guitars on Wall.png" alt="Store Left" class="about-side-img about-side-img-left">
 
     <!-- Main content -->
     <div class="about-section">
@@ -137,7 +166,7 @@
         <p class="about-overview">We are dedicated to innovation and continuously strive to push the boundaries of guitar design. Whether you are a beginner or a seasoned professional, our diverse range of guitars caters to all styles and preferences.</p>
         <p class="about-overview">Join us on this musical journey, and let our guitars be a part of your story.</p>
     </div>
- 
+
     <!-- Co-Founder Cards -->
     <div class="founders-container">
         <div class="founderCard">
@@ -157,6 +186,9 @@
             </p>
         </div>
     </div>
+
+    <!-- Right side image -->
+    <img src="Guitar with Accessories.jpg" alt="Store Right" class="about-side-img about-side-img-right">
 
     <footer class="footer">
         <div class="footerDiv">
