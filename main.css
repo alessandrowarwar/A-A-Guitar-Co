@@ -40,6 +40,7 @@
     border-bottom: 3px solid #FFD700;
     height: 100px;
 }
+
 /* This code is for the navigation bar links */
 .nav-link, .navbar-brand {
     color: #FFD700 !important;
@@ -51,7 +52,10 @@
     text-transform: uppercase;
     padding-left: 1em;
     padding-right: 1em;
+    filter: text-shadow(1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 /* This code is for the navigation bar links when hovered */
 .nav-link {
      margin-right: 1em !important
@@ -59,7 +63,31 @@
 /* This code is for the navigation bar links when hovered */
 .nav-link:hover {
     color: #ffffff !important;
+    animation-name: NavigationLinkHoverLinkAnimation;
+    animation-duration: 1s;
 }
+
+@keyframes NavigationLinkHoverLinkAnimation {
+  0%   {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+  25%  {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
+  50%  {text-shadow: 3px 3px 6px black, 0 0 35px blue, 0 0 15px darkblue;}
+  75% {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
+  100% {text-shadow: none;}
+}
+.nav-link:active { 
+  position: relative;
+  animation-name: NavigationClickLinkAnimation;
+  animation-duration: 1s;
+}
+
+@keyframes NavigationClickLinkAnimation {
+  0%   {bottom:0px;}
+  25%  {bottom:3px;}
+  50%  {bottom:6px;}
+  75%  {bottom:3px;}
+  100%  {bottom:0px;}
+}
+
 /* This code is for the navigation bar links when active */
 .navbar-collapse {
     justify-content: flex-end;
@@ -77,8 +105,9 @@ body {
 
 
 
+
 .footer {
-   width: 100%; 
+   max-width: 100%; 
    background: #121c55; 
    color: #FFD700; 
    padding: 60px 0 30px; 
