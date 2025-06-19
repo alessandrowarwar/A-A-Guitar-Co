@@ -210,3 +210,14 @@ body {
    display: inline-block;
    margin: 0 10px;
 }
+
+
+.footerIcons:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.footerIcons:hover::after {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
