@@ -10,3 +10,6 @@ CITATION PAGE
 <a href="https://www.stringswing.com/blog/guitar-wall-display-ideas/">Hanging Guitars on Wall Image</a>
 
 <a href="https://global.fcgrtokyo.com/universal-space.html">Guitar With Accessories Image</a>
+
+
+<a href="https://www.streamlinehq.com/icons/download/instagram-logo--29340">Instagram Logo</a>

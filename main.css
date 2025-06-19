@@ -55,10 +55,12 @@
     filter: text-shadow(1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue);
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
-.navbar-brand:hover {
-    color: #ffffff !important;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    animation-name: NavigationLinkHoverLinkAnimation;
+
+
+
+.navbar-brand:hover { 
+    filter: drop-shadow(3px 3px 6px black) drop-shadow(0 0 10px blue) drop-shadow(0 0 10px darkblue);
+    animation-name: NavigationBrandHoverAnimation;
     animation-duration: 1s;
     position: relative;
 }
@@ -93,7 +95,6 @@
     background: #ffffff;
     border-radius: 2px;
     animation: underlineAppear 1s forwards;
-    animation-delay: 0.1s;
     opacity: 0;
 }
 
@@ -203,4 +204,9 @@ body {
     max-width: 1200px; 
     margin: 0 auto; 
     flex-wrap: wrap;
+}
+
+.footerIcons {
+   display: inline-block;
+   margin: 0 10px;
 }
