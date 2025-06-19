@@ -1,6 +1,56 @@
     <!DOCTYPE html>
 <head>
     <title>A&A Guitar Co.</title>
+    <style>
+        .products-container {
+            background: rgba(18, 28, 85, 0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            padding: 2em 1em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: flex-start;
+            align-items: stretch;
+        }
+
+        .productCard {
+            color: #FFD700;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 0.2em;
+            text-align: center;
+            background: transparent;
+            border: none;
+            width: 180px;
+            padding: 1em 0.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-name {
+            color: #fffbe6;
+            font-size: 0.98em;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .product-type {
+            color: #fffbe6;
+            font-size: 1.05em;
+            font-style: italic;
+            margin-bottom: 0.7em;
+            text-align: center;
+        }
+
+        .product-price {
+            color: #fffbe6;
+            font-size: 0.98em;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        </style>
     <link rel="stylesheet" href="main.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -43,18 +93,259 @@
 <body class="backgroundGradient">
 
  <!-- Main content -->
-    <div class="container">
-        <h1 class="text-center mt-5">Latest Products</h1>
-        <div class="product-item">
-            <h2>New Guitar Model Launch</h2>
-            <p>We are excited to announce the launch of our latest guitar model, the A&A Signature Series. This model features a unique design and premium materials, ensuring top-notch sound quality.</p>
+<div class="products-container" style="display: flex; flex-wrap: wrap; gap: 2em; justify-content: flex-start; align-items: stretch;">
+    <div class="productCard">
+        <img src="Stratocaster.jpg" alt="A&A Horizon S1" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+        <div class="product-name">A&A Horizon S1</div>
+        <div class="product-price">$899.99</div>
+        <button class="btn btn-warning">Add to cart</button>
         </div>
-        <div class="product-item">
-            <h2>Upcoming Concerts</h2>
-            <p>Join us for our upcoming concerts featuring renowned artists. Check our events page for dates and ticket information.</p>
+        <div class="productCard">
+            <img src="LesPaul.jpg" alt="A&A Eclipse Pro" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Eclipse Pro</div>
+            <div class="product-price">$1,199.99</div>
+            <button class="btn btn-warning">Add to cart</button>
         </div>
-    </div>
-
+        <div class="productCard">
+            <img src="Telecaster.jpg" alt="A&A Twangcaster" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Twangcaster</div>
+            <div class="product-price">$849.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="SG.jpg" alt="A&A Viper SG" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Viper SG</div>
+            <div class="product-price">$999.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="PRS_Custom24.jpg" alt="A&A Artisan 24" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Artisan 24</div>
+            <div class="product-price">$1,499.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Ibanez_RG.jpg" alt="A&A Velocity RG" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Velocity RG</div>
+            <div class="product-price">$799.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Yamaha_Pacifica.jpg" alt="A&A Pacifica 112V" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Pacifica 112V</div>
+            <div class="product-price">$399.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Epiphone_Dot.jpg" alt="A&A Metro Dot" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Metro Dot</div>
+            <div class="product-price">$649.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Martin_D28.jpg" alt="A&A Heritage D28" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Heritage D28</div>
+            <div class="product-price">$2,499.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Taylor_214ce.jpg" alt="A&A Grand 214ce" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Grand 214ce</div>
+            <div class="product-price">$1,199.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Acoustic.jpg" alt="A&A Trailblazer 60S" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Trailblazer 60S</div>
+            <div class="product-price">$349.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Boss_Katana.jpg" alt="A&A Katana 50" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Katana 50</div>
+            <div class="product-price">$229.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Champ.jpg" alt="A&A Champion 40" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Champion 40</div>
+            <div class="product-price">$249.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Marshall_Code.jpg" alt="A&A Code 50" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Code 50</div>
+            <div class="product-price">$299.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Orange_Crush.jpg" alt="A&A Orange 20" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Orange 20</div>
+            <div class="product-price">$179.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Vox_AC15.jpg" alt="A&A Vox AC15" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Vox AC15</div>
+            <div class="product-price">$699.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Line6_Spyder.jpg" alt="A&A Spider V 60" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Spider V 60</div>
+            <div class="product-price">$249.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Dunlop_Crybaby.jpg" alt="A&A Crybaby Wah" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Crybaby Wah</div>
+            <div class="product-price">$99.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Boss_DS1.jpg" alt="A&A DS-1 Distortion" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A DS-1 Distortion</div>
+            <div class="product-price">$59.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="TC_Electronic_Tuner.jpg" alt="A&A PolyTune 3" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A PolyTune 3</div>
+            <div class="product-price">$99.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="ErnieBall_Strings.jpg" alt="A&A Slinky Strings" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Slinky Strings</div>
+            <div class="product-price">$7.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="DAddario_Strings.jpg" alt="A&A BrightTone Strings" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A BrightTone Strings</div>
+            <div class="product-price">$6.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="PlanetWaves_Cable.jpg" alt="A&A Pro Instrument Cable" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Pro Instrument Cable</div>
+            <div class="product-price">$19.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Strap.jpg" alt="A&A Signature Strap" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Signature Strap</div>
+            <div class="product-price">$14.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Kyser_Capo.jpg" alt="A&A Quick-Change Capo" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Quick-Change Capo</div>
+            <div class="product-price">$19.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Snark_Tuner.jpg" alt="A&A Clip-On Tuner" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Clip-On Tuner</div>
+            <div class="product-price">$12.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Gator_Case.jpg" alt="A&A Deluxe ABS Case" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Deluxe ABS Case</div>
+            <div class="product-price">$89.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Hercules_Stand.jpg" alt="A&A Hercules Stand" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Hercules Stand</div>
+            <div class="product-price">$34.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Shure_SM57.jpg" alt="A&A Studio Microphone" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Studio Microphone</div>
+            <div class="product-price">$99.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Vox_Mini3.jpg" alt="A&A MiniAmp G2" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A MiniAmp G2</div>
+            <div class="product-price">$89.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Mustang.jpg" alt="A&A Mustang LT25" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Mustang LT25</div>
+            <div class="product-price">$179.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Ibanez_TS9.jpg" alt="A&A Tube Screamer" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Tube Screamer</div>
+            <div class="product-price">$109.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="MXR_Phase90.jpg" alt="A&A Phase 90" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Phase 90</div>
+            <div class="product-price">$79.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="ElectroHarmonix_BigMuff.jpg" alt="A&A Big Muff Pi" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Big Muff Pi</div>
+            <div class="product-price">$89.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="DAddario_Picks.jpg" alt="A&A Assorted Picks" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Assorted Picks (10-pack)</div>
+            <div class="product-price">$4.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Picks.jpg" alt="A&A Medium Picks" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Medium Picks (12-pack)</div>
+            <div class="product-price">$5.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Levy_LeatherStrap.jpg" alt="A&A Leather Strap" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Leather Strap</div>
+            <div class="product-price">$29.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="DAddario_Capo.jpg" alt="A&A NS Capo" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A NS Capo</div>
+            <div class="product-price">$16.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_GigBag.jpg" alt="A&A FE610 Gig Bag" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A FE610 Gig Bag</div>
+            <div class="product-price">$24.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Dunlop_Cleaner.jpg" alt="A&A Formula 65 Cleaner" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Formula 65 Cleaner</div>
+            <div class="product-price">$7.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Fender_Cable.jpg" alt="A&A Deluxe Cable" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A Deluxe Cable (15ft)</div>
+            <div class="product-price">$24.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
+        <div class="productCard">
+            <img src="Boss_RC1.jpg" alt="A&A RC-1 Loop Station" style="width:120px; height: 180px; border-radius:10px; margin-bottom:1em;">
+            <div class="product-name">A&A RC-1 Loop Station</div>
+            <div class="product-price">$119.99</div>
+            <button class="btn btn-warning">Add to cart</button>
+        </div>
 
 <footer class="footer">
 		<div class = "footerDiv">

@@ -55,10 +55,18 @@
     filter: text-shadow(1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue);
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+.navbar-brand:hover {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    animation-name: NavigationLinkHoverLinkAnimation;
+    animation-duration: 1s;
+    position: relative;
+}
+
 
 /* This code is for the navigation bar links when hovered */
 .nav-link {
-     margin-right: 1em !important
+     margin-right: 1em !important;
 }
 /* This code is for the navigation bar links when hovered */
 .nav-link:hover {
@@ -67,7 +75,13 @@
     animation-duration: 1s;
     position: relative;
 }
-
+@keyframes NavigationLinkHoverLinkAnimation {
+  0%   {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
+  25%  {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
+  50%  {text-shadow: 3px 3px 6px black, 0 0 35px blue, 0 0 15px darkblue;}
+  75% {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
+  100% {text-shadow: none;}
+}
 .nav-link:hover::after {
     content: "";
     display: block;
@@ -78,7 +92,8 @@
     height: 1px;
     background: #ffffff;
     border-radius: 2px;
-    animation: underlineAppear 0.4s forwards;
+    animation: underlineAppear 1s forwards;
+    animation-delay: 0.1s;
     opacity: 0;
 }
 
@@ -103,13 +118,7 @@
     }
 }
 
-@keyframes NavigationLinkHoverLinkAnimation {
-  0%   {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
-  25%  {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
-  50%  {text-shadow: 3px 3px 6px black, 0 0 35px blue, 0 0 15px darkblue;}
-  75% {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
-  100% {text-shadow: none;}
-}
+
 .nav-link:active { 
   position: relative;
   animation-name: NavigationClickLinkAnimation;
