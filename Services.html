@@ -27,11 +27,12 @@
             padding: 1.5em 1em;         
             box-shadow: 0 4px 16px rgba(0,0,0,0.15); 
             min-width: 120px;             
-            margin: 1em 0;               
+            margin: 1em 0;         
         }
+       
 
         /* Description text below each icon */
-        .service-desc {
+        .service-button {
             color: #121c55;
             background: #FFD700;
             font-size: 1.3em;
@@ -42,7 +43,13 @@
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.10);
             display: inline-block;
+            transition: background 0.3s ease;
         }
+
+         .service-button:hover{
+            background: #f0c040; 
+        }   
+
         /* Services page header and overview styling */
         .services-header-section {
             background: rgba(18, 28, 85, 0.85);
@@ -107,7 +114,7 @@
     <div class="services-header-section">
         <h2 class="services-header-title">Our Services</h2>
         <p class="services-header-overview">
-            At A&amp;A Guitars, we offer a full range of services to help you get the most out of your instrument. From custom builds and expert repairs to professional setups and quality accessories, our team is dedicated to supporting your musical journey.
+            At A&amp;A Guitars, we offer a full range of services to help you get the most out of your gear. From custom builds and expert repairs to lessons, our team is dedicated to supporting your musical journey.
         </p>
     </div>
 
@@ -116,22 +123,22 @@
         <!-- Service 1 -->
         <div class="service-icon-block">
             <img src="Custom Build Icon.png" alt="Custom Builds Icon" style="width: 400px; height: 400px; margin-bottom:0.7em;">
-            <div class="service-desc">Custom Guitar Builds</div>
+            <a href="#"><div class="service-button">Custom Guitar Builds</div></a>
         </div>
         <!-- Service 2 -->
         <div class="service-icon-block">
             <img src="Guitar Maintenance and Repairs Icon.png" alt="Repairs Icon" style="width:400px; height:400px; margin-bottom:0.7em;">
-            <div class="service-desc">Guitar Maintenance & Repairs</div>
+            <a href="#"><div class="service-button">Guitar Maintenance & Repairs</div></a>
         </div>
         <!-- Service 3 -->
         <div class="service-icon-block">
             <img src="Custom Amps Icon.png" alt="Setups Icon" style="width:400px; height:400px; margin-bottom:0.7em;">
-            <div class="service-desc">UPDATE PROPER TITLE DESCRIPTION HERE</div>
+            <a href="#"><div class="service-button">Audio Equipment Service </div></a>
         </div>
         <!-- Service 4 -->
         <div class="service-icon-block">
             <img src="Guitar Lessons Icon.png" alt="Accessories Icon" style="width:400px; height:400px; margin-bottom:0.7em;">
-            <div class="service-desc">Professional Guitar Lessons</div>
+            <a href="#"><div class="service-button">Professional Guitar Lessons</div></a>
         </div>
     </div>
 
