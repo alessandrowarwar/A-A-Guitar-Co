@@ -73,7 +73,37 @@
             color: #fffbe6;
             margin-bottom: 0;
         }
-        </style>
+
+        /* Light mode overrides */
+        body.lightMode .products-container {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+
+        body.lightMode .productCard {
+            color: #1a237e;
+            background: transparent;
+        }
+
+        body.lightMode .product-name,
+        body.lightMode .product-type,
+        body.lightMode .product-price {
+            color: #1a237e;
+        }
+
+        body.lightMode .products-header-section {
+            background: rgba(255, 255, 255, 0.95);
+            color: #1a237e;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        body.lightMode .products-header-title {
+            color: #1a237e;
+        }
+
+        body.lightMode .products-header-overview {
+            color: #333;
+        }    </style>
     <link rel="stylesheet" href="index.css">
     <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">

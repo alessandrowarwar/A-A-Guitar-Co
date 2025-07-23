@@ -399,21 +399,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.lightMode .changeScreenModeBtn {
-    background: #0211df;
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    padding: 0.6em 1.5em;
-    font-size: 0.8em;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.lightMode .changeScreenModeBtn:hover {
-    background: #010977;
-}
-
 .lightMode a,
 .lightMode a:visited {
     color: #0211df !important;
@@ -426,6 +411,12 @@ body {
 
 .lightMode .footerDiv {
     background: #ffffff;
+}
+
+ .backgroundGradient.lightMode{
+    background: linear-gradient(160deg, #ffffff, #1d55ee);
+    display: flex;
+    flex-direction: column;
 }
 
 .lightMode .darkMode {

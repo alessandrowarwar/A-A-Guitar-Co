@@ -17,7 +17,7 @@
             flex-wrap: wrap;              
         }
 
-    /* Each icon block styling */
+        /* Each icon block styling */
         .service-icon-block {
             display: flex;                
             flex-direction: column;
@@ -29,8 +29,7 @@
             min-width: 120px;             
             margin: 1em 0;         
         }
-       
-
+           
         /* Description text below each icon */
         .service-button {
             color: #121c55;
@@ -46,7 +45,7 @@
             transition: background 0.3s ease;
         }
 
-         .service-button:hover{
+        .service-button:hover{
             background: #f0c040; 
         }   
 
@@ -62,6 +61,35 @@
             text-align: center;
         }
 
+        /* Light mode overrides */
+        .lightMode .services-icons-container .service-icon-block {
+            background: rgba(255, 255, 255, 0.92);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        .lightMode .service-button {
+            color: #fff;
+            background: #121c55;
+        }
+
+        .lightMode .service-button:hover {
+            background: #24348a;
+        }
+
+        .lightMode .services-header-section {
+            background: rgba(255,255,255,0.92);
+            color: #121c55;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        .lightMode .services-header-title {
+            color: #121c55;
+        }
+
+        .lightMode .services-header-overview {
+            color: #24348a;
+        }
+
         .services-header-title {
             font-size: 2em;
             font-weight: bold;
@@ -74,6 +102,8 @@
             color: #fffbe6;
             margin-bottom: 0;
         }
+
+        
     </style>
 </head>
 

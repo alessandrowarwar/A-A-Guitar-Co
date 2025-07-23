@@ -32,7 +32,7 @@
           body {
             background: url('BlackGuitarBackground.jpg') no-repeat center center fixed;
             background-size: cover;
-        }
+        }   
 
         .contact-content h3 {
         font-size: 45px;
@@ -40,6 +40,22 @@
         color: #FFD700;
         margin-bottom: 0.5em;
      }
+
+     .lightMode .contact-content {
+        background:#c4d8ff;
+        color: #121c55;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        border: #1a237e 5px solid;
+        opacity: 0.9;
+     }
+
+     body.lightMode {
+        background: url('whiteGuitarBackground.jpg') no-repeat center center fixed;
+        background-size: cover;
+     }
+    
+
+
 
    </style>
     <title>A&A Guitar Co.</title>
@@ -87,7 +103,7 @@
     <!-- email box -->
     <div class="contact-content">
         <h3 class="contact-content">Contact Us!</h3>
-        <p style="font-size: 1.15em;color: #fffbe6;line-height: 1.6;margin-bottom: 0;">Have questions? Feel free to reach out!</p>
+        <p style="font-size: 1.15em;line-height: 1.6;margin-bottom: 0;">Have questions? Feel free to reach out!</p>
         <br><input type="text" class="contactform-control" placeholder="Name" name="" style="width: 100%;"></br>
         <br><input type="email" class="contactform-control" placeholder="Email" name="" style="width: 100%;"></br>
         <br><input type="text" class="contactform-control" placeholder="Subject" name="" style="width: 100%;"></br>
