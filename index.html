@@ -46,9 +46,30 @@
 			.view-guitars-btn:hover {
 				background: #f0c040;
 			}
-			
-			
+			.lightMode .welcome-section {
+    			background: rgba(18, 28, 85, 0.85);
+			}
+
+			.lightMode .view-guitars-btn {
+ 				background: #FFD700;
+				color: #121c55;
+			}
+
+			.view-guitars-btn:hover {
+				background: #f0c040;
+			}
+
+		.lightMode .welcome-section {
+				background: #0813a3;
+				color: #FFD700;
+				opacity: 0.8;
+				
+			}
+			.lightMode .welcome-heading {
+				color: #FFD700;
+			}
 		
+
 		</style>
 		<!-- Link to Google Fonts for Montserrat -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -68,7 +89,7 @@
 		<nav class="navbar navbar-expand-md">
 	        
 			<!-- We inserted a small company logo here -->
-			<a class="navbar-brand" href="index.css"><img src="CompanyLogo.png" width="260px"></a>
+			<a class="navbar-brand" href="index.html"><img src="CompanyLogo.png" width="260px"></a>
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -119,6 +140,7 @@
 <!-- footer -->
 	<footer class="footer">
 		<div class="footerDiv">
+			
 			<div style="min-width: 220px;">
 				<h3 class="footer-title">Additional information</h3>
 				<p>&copy; 2024 A&amp;A Guitar Co. All rights reserved.<br>
@@ -140,7 +162,19 @@
 				</a>
 			</div>
 		</div>
+
+		<div style="min-width: 100px; text-align: center;"> 
+				<button class = "changeScreenModeBtn" onclick = "changeMode()"> Click to change screen mode</button>
+		</div>
 	</footer>
+			<script>
+					function changeMode(){
+						
+						document.body.classList.toggle('lightMode');
+						document.body.classList.toggle('darkMode');
+						
+					}
+			</script>
 	</body>
 
 
