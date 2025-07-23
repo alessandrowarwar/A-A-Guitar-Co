@@ -79,7 +79,7 @@
 	
     </head>
 
-    <body>
+    <body class = "darkMode">
 		<!-- This is the background video that will play on the home page -->
 		<video autoplay muted loop playsinline id="bg-video">
     		<source src="PlayingGuitar.mp4" type="video/mp4">
@@ -168,12 +168,31 @@
 		</div>
 	</footer>
 			<script>
-					function changeMode(){
-						
-						document.body.classList.toggle('lightMode');
-						document.body.classList.toggle('darkMode');
-						
+					
+					function setCookie(cname, cvalue, exdays) {
+ 					const d = new Date();
+  					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  					let expires = "expires="+ d.toUTCString();
+  					document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 					}
+
+					function changeMode(){
+						let currentMode;
+						if (document.body.classList.contains('darkMode')) {
+							document.body.classList.remove('darkMode');
+							document.body.classList.add('lightMode');
+							currentMode = 'lightMode';
+						}
+						else if (document.body.classList.contains('lightMode')) {
+							document.body.classList.remove('lightMode');
+							document.body.classList.add('darkMode');
+							currentMode = 'darkMode';
+							
+						}
+						setCookie('mode', currentMode, 30);
+					}
+
+					
 			</script>
 	</body>
 
