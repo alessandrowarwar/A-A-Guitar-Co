@@ -237,23 +237,23 @@ body {
     background: #f0c040;
 }
 
-.darkMode {
+.lightMode {
     background-color: #121c55;
     color: #FFD700;
 }
 
-.lightMode {
+.darkMode {
     background-color: #ffffff;
     color: #0211df;
 }
 
-.lightMode .backgroundGradient{
+.darkMode .backgroundGradient{
     background: linear-gradient(135deg, #2d42ff, #000000);
     display: flex;
     flex-direction: column;
 }
 
-.lightMode .navbar {
+.darkMode .navbar {
     background: #ffffff;
     border-bottom: 3px solid #0211df;
     height: 100px;
@@ -261,8 +261,8 @@ body {
     align-items: center;
 }
 
-.lightMode .nav-link,
-.lightMode .navbar-brand {
+.darkMode .nav-link,
+.darkMode .navbar-brand {
     color: #0211df !important;
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     padding-left: 1em;
@@ -271,18 +271,18 @@ body {
     transition: color 0.3s ease, text-shadow 0.3s ease;
     cursor: pointer;
 }
-.lightMode .navbar-brand:hover {
+.darkMode .navbar-brand:hover {
     filter: drop-shadow(2px 2px 4px #0211df) drop-shadow(0 0 5px #0211df);
     animation-name: NavigationBrandHoverAnimation;
     animation-duration: 1s;
     position: relative;
 }
 
-.lightMode .nav-link {
+.darkMode .nav-link {
     margin-right: 1em !important;
 }
 
-.lightMode .nav-link:hover {
+.darkMode .nav-link:hover {
     color: #ffffff !important;
     animation-name: NavigationLinkHoverLinkAnimationLight;
     animation-duration: 1s;
@@ -298,7 +298,7 @@ body {
     100% {text-shadow: 1px 1px 2px #ccc, 0 0 10px #0211df, 0 0 5px #0211df;}
 }
 
-.lightMode .nav-link:hover::after {
+.darkMode .nav-link:hover::after {
     content: "";
     display: block;
     position: absolute;
@@ -334,7 +334,7 @@ body {
     }
 }
 
-.lightMode .nav-link:active {
+.darkMode .nav-link:active {
     position: relative;
     animation-name: NavigationClickLinkAnimationLight;
     animation-duration: 1s;
@@ -346,80 +346,80 @@ body {
     50%  {bottom:6px;}
     75%  {bottom:3px;}
 }
-.lightMode .navbar-collapse {
+.darkMode .navbar-collapse {
     justify-content: flex-end;
     align-items: center;
     display: flex !important;
     height: 100%;
 }
-.lightMode .navbar-collapse {
+.darkMode .navbar-collapse {
     justify-content: flex-end;
 }
 
-.lightMode .navbar-brand img {
+.darkMode .navbar-brand img {
     margin-top: 10px;
 }
 
-.lightMode .title {
+.darkMode .title {
     background: rgba(255, 255, 255, 0.85);
     color: #0211df;
     box-shadow: 0 4px 16px rgba(2, 17, 223, 0.08);
 }
 
-.lightMode .title-description {
+.darkMode .title-description {
     background: rgba(255, 255, 255, 0.85);
     color: #0211df;
     box-shadow: 0 4px 16px rgba(2, 17, 223, 0.07);
 }
 
-.lightMode .backgroundGradient {
+.darkMode .backgroundGradient {
     background: linear-gradient(135deg, #e3e8fc, #fffbe6);
 }
 
-.lightMode .footer {
+.darkMode .footer {
     background: #ffffff !important;
     color: #0211df !important;
 }
 
-.lightMode .footer-title {
+.darkMode .footer-title {
     color: #0211df !important;
 }
 
-.lightMode .footer-text {
+.darkMode .footer-text {
     color: #0211df !important;
 }
 
-.lightMode .footerIcons {
+.darkMode .footerIcons {
     background: #ffffff !important;
     color: #0211df !important;
 }
 
-.lightMode .footerIcons:hover {
+.darkMode .footerIcons:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-.lightMode a,
-.lightMode a:visited {
+.darkMode a,
+.darkMode a:visited {
     color: #0211df !important;
 }
 
-.lightMode #bg-video {
+.darkMode #bg-video {
     opacity: 0.7;
     filter: grayscale(0.2) brightness(1.1);
 }
 
-.lightMode .footerDiv {
+.darkMode .footerDiv {
     background: #ffffff;
 }
 
- .backgroundGradient.lightMode{
+ .backgroundGradient.darkMode{
     background: linear-gradient(160deg, #ffffff, #1d55ee);
     display: flex;
     flex-direction: column;
 }
 
-.lightMode .darkMode {
+.darkMode .lightMode {
     background-color: #121c55;
     color: #FFD700;
 }
