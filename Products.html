@@ -419,17 +419,18 @@
 					<img src="Linkedin-logo.svg" alt="LinkedIn" height="30" width="30" />
 				</a>
 			</div>
-		</div>
-	            <div style="min-width: 100px; text-align: center;"> 
-				<button class = "changeScreenModeBtn" onclick = "changeMode()"> Click to change screen mode</button>
+		<div style="min-width: 100px; text-align: center;"> 
+				<a class= "changeScreenModeIcon" onclick = "changeMode()">
+					<img class="changeScreenModeIcon" src="darkModeIcon.png" alt="Change Mode" height="90" width="90" />
+				</a>
 		</div>
 	</footer>
 			<script>
-										function setCookie(cname, cvalue, exdays) {
- 					const d = new Date();
-  					d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  					let expires = "expires="+ d.toUTCString();
-  					document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+					function setCookie(cname, cvalue, exdays) {
+ 					    const d = new Date();
+  					    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  				    	let expires = "expires="+ d.toUTCString();
+  				    	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 					}
 
 					function getCookie(cname) {
@@ -448,32 +449,45 @@
     				return "";
 }
 
-					function changeMode(){
+				function changeMode(){
 						let currentMode;
+						const iconImg = document.querySelector('.changeScreenModeIcon img');
 						if (document.body.classList.contains('darkMode')) {
 							document.body.classList.remove('darkMode');
 							document.body.classList.add('lightMode');
 							currentMode = 'lightMode';
+							if (iconImg) {
+								iconImg.src = 'darkModeIcon.png'; // light mode icon
+							}
 						}
 						else if (document.body.classList.contains('lightMode')) {
 							document.body.classList.remove('lightMode');
 							document.body.classList.add('darkMode');
 							currentMode = 'darkMode';
-							
+							if (iconImg) {
+								iconImg.src = 'lightModeIcon.png'; // dark mode icon
+							}
 						}
 						setCookie('mode', currentMode, 30);
 					}
 
 					window.onload = function() {
     					let savedMode = getCookie('mode');
+						const iconImg = document.querySelector('.changeScreenModeIcon img');
     					if (savedMode === 'darkMode') {
         					document.body.classList.remove('lightMode');
         					document.body.classList.add('darkMode');
+							if (iconImg) {
+								iconImg.src = 'lightModeIcon.png'; // dark mode icon
+							}
     					} else if (savedMode === 'lightMode') {
         					document.body.classList.remove('darkMode');
         					document.body.classList.add('lightMode');
-    				}
-};
+							if (iconImg) {
+								iconImg.src = 'darkModeIcon.png'; // light mode icon
+							}
+						}
+					};
 			</script>
 	</body>
 

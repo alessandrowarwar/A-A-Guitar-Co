@@ -222,24 +222,15 @@ body {
     transition: transform 0.3s ease;
 }
 
-.changeScreenModeBtn {
-    background: #FFD700;
-    color: #121c55;
-    border: none;
-	border-radius: 12px;
-	padding: 0.6em 1.5em;
-	font-size: 0.8em;
-    cursor: pointer;
-	transition: background 0.3s ease;
-}
 
-.changeScreenModeBtn:hover {
-    background: #f0c040;
+/* This code is for the effects set on the change screen mode icon */
+.changeScreenModeIcon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
-
-.lightMode {
-    background-color: #121c55;
-    color: #FFD700;
+.changeScreenModeIcon:hover::after {
+    transform: scale(1);
+    transition: transform 0.3s ease;
 }
 
 /* --- DARK MODE: TRUE BLACK THEME --- */
@@ -512,7 +503,7 @@ body {
 /* Make buttons gold on dark background */
 .darkMode button,
 .darkMode .submit-btn,
-.darkMode .changeScreenModeBtn {
+.darkMode {
     background: #FFD700 !important;
     color: #111 !important;
     border: none !important;
