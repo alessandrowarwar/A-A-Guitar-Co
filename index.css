@@ -502,8 +502,7 @@ body {
 
 /* Make buttons gold on dark background */
 .darkMode button,
-.darkMode .submit-btn,
-.darkMode {
+.darkMode .submit-btn {
     background: #FFD700 !important;
     color: #111 !important;
     border: none !important;
