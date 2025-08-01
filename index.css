@@ -501,13 +501,12 @@ body {
 }
 
 /* Make buttons gold on dark background */
-.darkMode button,
+.darkMode button:not(.changeScreenModeIcon),
 .darkMode .submit-btn {
     background: #FFD700 !important;
     color: #111 !important;
     border: none !important;
 }
-
 /* Make links gold */
 .darkMode a,
 .darkMode a:visited {
@@ -539,6 +538,26 @@ body.darkMode.ContactPage .contact-content {
     box-shadow: 0 4px 24px rgba(0,0,0,0.5) !important;
     border: 2px solid #FFD700 !important;
     opacity: 1 !important;
+}
+
+/* Remove default button background and border, make it look like an icon button */
+.changeScreenModeIcon {
+    background: none;         
+    border: none;             
+    cursor: pointer;          
+    padding: 0 8px 0 0;       
+    display: flex;            
+    align-items: center;      
+    height: 100%;             
+}
+
+/* Style the icon image inside the button */
+.changeScreenModeIcon img {
+    width: 45px;              
+    height: 43px;             
+    display: block;           
+    margin: 0;                
+    padding: 0;               
 }
 
 
