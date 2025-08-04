@@ -39,6 +39,7 @@ function setModeClass() {
 setModeClass();
 </script>
     <style>
+        /* Dark Mode Styles */
         .about-section {
 				background: rgba(18, 28, 85, 0.85);
 				color: #FFD700;
@@ -49,19 +50,21 @@ setModeClass();
 				padding: 2em 2.5em;
 				text-align: center;
 			}
+            /* Light Mode Styles */
 			.about-heading {
 				font-size: 2em;
 				font-weight: bold;
 				margin-bottom: 1em;
 				color: #FFD700;
 			}
+            /* Overview text */
 			.about-overview {
 				font-size: 1.15em;
 				color: #fffbe6;
 				line-height: 1.6;
                 margin-bottom: 0;
             }
-
+            /* Founder Cards */
             .founderCard {
                 margin: 2em 1em;
                 padding: 2em 1em;
@@ -72,17 +75,21 @@ setModeClass();
                 width: 260px;
             }
 
+            /* Founder Name */
             .founders-container {
                 text-align: center;
                 margin-bottom: 3em;
                 color :rgba(255, 255, 255, 0.932);
             }
 
+            /* Founder Name */
             .team .card-columns {
                 -webkit-column-count: 4;
                 -moz-column-count: 4;
                 column-count: 4;
             }
+
+            /* Founder Name */
             .founders-container {
                 display: flex;
                 justify-content: center;
@@ -91,6 +98,7 @@ setModeClass();
                 flex-wrap: wrap;
             }
 
+            /* Founder Name */
             .founderCard {
                 background: rgba(18, 28, 85, 0.85);
                 border-radius: 18px;
@@ -102,6 +110,8 @@ setModeClass();
                 width: 260px;
                 margin: 1em;
             }
+
+            /* Founder Name */
             .founder-name {
                 color: #FFD700;
                 font-size: 1.3em;
@@ -110,6 +120,7 @@ setModeClass();
                 text-align: center;
             }
 
+            /* Founder Title */
             .founder-title {
                 color: #fffbe6;
                 font-size: 1.05em;
@@ -118,6 +129,7 @@ setModeClass();
                 text-align: center;
             }
 
+            /* Founder Overview */
             .founder-overview {
                 color: #fffbe6;
                 font-size: 0.98em;
@@ -125,33 +137,39 @@ setModeClass();
                 margin-bottom: 0;
             }
 
-
+            /*Dark Mode Styles */
             .darkMode .about-section {
                 background: rgba(255, 255, 255, 0.92);
                 color: #121c55;
             }
 
+            /* Dark Mode Heading */
             .darkMode .about-heading {
                 color: #121c55;
             }
 
+            /* Dark Mode Overview Text */
             .darkMode .about-overview {
                 color:#121c55;
             }
 
+            /* Dark Mode Founder Cards */
             .darkMode .founderCard {
                 background: rgba(255, 255, 255, 0.92);
                 color: #121c55;
                 box-shadow: 0 4px 24px rgba(0,0,0,0.08);
             }
 
+            /* Dark Mode Founder Name */
             .darkMode .founder-name {
                 color: #121c55;
             }
 
+            /* Dark Mode Founder Title */
             .darkMode .founder-title {
                 color: #24348a;
             }
+            /* Dark Mode Founder Overview */
             .darkMode .founder-overview {
                 color: #24348a;
             }
@@ -254,6 +272,7 @@ setModeClass();
     <img src="Guitar with Accessories.jpg" alt="Electric guitars on display." class="about-side-img about-side-img-right d-none d-lg-block">
 
 			<script>
+                    // Sets a cookie with the given name, value, and expiration in days
 				    function setCookie(cname, cvalue, exdays) {
  					    const d = new Date();
   					    d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -261,6 +280,7 @@ setModeClass();
   					    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 					}
 
+                    // Retrieves the value of a cookie by name
 					function getCookie(cname) {
     					let name = cname + "=";
     					let decodedCookie = decodeURIComponent(document.cookie);
@@ -276,12 +296,14 @@ setModeClass();
     				}
     				return "";
 }
-
+        // Toggles between light and dark mode for the site
+        // Updates the body class, icon image, logo, and saves the mode in a cookie
 		function changeMode(){
 						let currentMode;
 						const iconImg = document.querySelector('.changeScreenModeIcon img');
                         const CompanyLogo = document.querySelector('.navbar-brand img');
 						if (document.body.classList.contains('darkMode')) {
+                             // Switch to light mode
 							document.body.classList.remove('darkMode');
 							document.body.classList.add('lightMode');
 							currentMode = 'lightMode';
@@ -303,6 +325,7 @@ setModeClass();
                                 CompanyLogo.src = 'CompanyLogoDark.png'; // dark mode logo
                             }
 						}
+                        // Save the user's mode preference in a cookie for 30 days
 						setCookie('mode', currentMode, 30);
 					}
 			</script>
