@@ -28,6 +28,7 @@
     font-style:italic; 
 }
 
+/* This code is for the main background gradient on all pages */
 .backgroundGradient{
     background: linear-gradient(135deg, #1226d8, #685904);
     display: flex;
@@ -57,7 +58,7 @@
 }
 
 
-
+/* This code is for the navigation bar brand hover effect */
 .navbar-brand:hover { 
     filter: drop-shadow(3px 3px 6px black) drop-shadow(0 0 10px blue) drop-shadow(0 0 10px darkblue);
     animation-name: NavigationBrandHoverAnimation;
@@ -70,6 +71,7 @@
 .nav-link {
      margin-right: 1em !important;
 }
+
 /* This code is for the navigation bar links when hovered */
 .nav-link:hover {
     color: #ffffff !important;
@@ -77,6 +79,8 @@
     animation-duration: 1s;
     position: relative;
 }
+
+/* Animation for nav link hover underline */
 @keyframes NavigationLinkHoverLinkAnimation {
   0%   {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
   25%  {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
@@ -84,6 +88,7 @@
   75% {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
   100% {text-shadow: none;}
 }
+/* This code is for the navigation bar links when hovered */
 .nav-link:hover::after {
     content: "";
     display: block;
@@ -98,6 +103,7 @@
     opacity: 0;
 }
 
+/*This code is for the navigation bar links when hovered */
 @keyframes underlineAppear {
     0% {
         width: 0;
@@ -119,13 +125,14 @@
     }
 }
 
-
+/* This code is for the navigation bar links when clicked */
 .nav-link:active { 
   position: relative;
   animation-name: NavigationClickLinkAnimation;
   animation-duration: 1s;
 }
 
+/* Animation for nav link click effect */
 @keyframes NavigationClickLinkAnimation {
   0%   {bottom:0px;}
   25%  {bottom:3px;}
@@ -151,7 +158,7 @@ body {
 
 
 
-
+/* This code is for the footer */
 .footer {
    max-width: 100%; 
    background: #121c55; 
@@ -161,10 +168,12 @@ body {
    position: bottom;
 }
 
+/* This code is for the footer row */
 .footer-row {
     width:100%;
 }
 
+/* This code is for the footer title */
 .footer-title {
     color: #ffffff;
 	font-size: 1.3rem;
@@ -174,6 +183,7 @@ body {
     text-align: center;
 }
 
+/* This code is for the footer text */
 .footer-text {
     color: #ffffff;
     font-size: 1.1rem;
@@ -197,6 +207,7 @@ body {
     pointer-events: none;
 }
 
+/* This code is for the footer div */
 .footerDiv {
     display: flex; 
     justify-content: space-between; 
@@ -206,17 +217,19 @@ body {
     flex-wrap: wrap;
 }
 
+/* This code is for the footer icons */
 .footerIcons {
    display: inline-block;
    margin: 0 10px;
 }
 
-
+/* This code is for the footer icons when hovered */
 .footerIcons:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
+/* This code is for the footer icons when hovered */
 .footerIcons:hover::after {
     transform: scale(1);
     transition: transform 0.3s ease;
@@ -239,10 +252,12 @@ body {
     color: #FFD700 !important;
 }
 
+/* This code is for the dark mode background gradient */
 .darkMode .backgroundGradient {
     background: linear-gradient(135deg, #222, #000) !important;
 }
 
+/* This code is for the dark mode navigation bar */
 .darkMode .navbar {
     background: #111 !important;
     border-bottom: 3px solid #FFD700 !important;
@@ -251,6 +266,7 @@ body {
     align-items: center;
 }
 
+/* This code is for the dark mode navigation bar links */
 .darkMode .nav-link,
 .darkMode .navbar-brand {
     color: #FFD700 !important;
@@ -263,6 +279,7 @@ body {
     cursor: pointer;
 }
 
+/* This code is for the dark mode navigation bar brand hover effect */
 .darkMode .navbar-brand:hover {
     filter: drop-shadow(2px 2px 4px #FFD700) drop-shadow(0 0 5px #FFD700);
     animation-name: NavigationBrandHoverAnimation;
@@ -270,10 +287,12 @@ body {
     position: relative;
 }
 
+/* This code is for the dark mode navigation bar links */
 .darkMode .nav-link {
     margin-right: 1em !important;
 }
 
+/* This code is for the dark mode navigation bar links when hovered */
 .darkMode .nav-link:hover {
     color: #fff !important;
     animation-name: NavigationLinkHoverLinkAnimationDark;
@@ -282,6 +301,7 @@ body {
     position: relative;
 }
 
+/* This code is for the dark mode navigation bar links when hovered */
 @keyframes NavigationLinkHoverLinkAnimationDark {
     0%   {text-shadow: 1px 1px 2px #000, 0 0 10px #FFD700, 0 0 5px #FFD700;}
     25%  {text-shadow: 2px 2px 4px #000, 0 0 15px #FFD700, 0 0 10px #FFD700;}
@@ -290,6 +310,7 @@ body {
     100% {text-shadow: 1px 1px 2px #000, 0 0 10px #FFD700, 0 0 5px #FFD700;}
 }
 
+/* This code is for the dark mode navigation bar links when hovered */
 .darkMode .nav-link:hover::after {
     content: "";
     display: block;
@@ -305,6 +326,7 @@ body {
     opacity: 0;
 }
 
+/* This code is for the dark mode navigation bar links when hovered */
 @keyframes underlineAppearDark {
     0% {
         width: 0;
@@ -326,12 +348,14 @@ body {
     }
 }
 
+/* This code is for the dark mode navigation bar links when clicked */
 .darkMode .nav-link:active {
     position: relative;
     animation-name: NavigationClickLinkAnimationDark;
     animation-duration: 1s;
 }
 
+/* This code is for the dark mode navigation bar links when clicked */
 @keyframes NavigationClickLinkAnimationDark {
     0%   {bottom:0px;}
     25%  {bottom:3px;}
@@ -340,6 +364,7 @@ body {
     100% {bottom:0px;}
 }
 
+/* This code is for the dark mode navigation bar links when active */
 .darkMode .navbar-collapse {
     justify-content: flex-end;
     align-items: center;
@@ -347,10 +372,12 @@ body {
     height: 100%;
 }
 
+/* This code is for the dark mode navigation bar brand */
 .darkMode .navbar-brand img {
     margin-top: 10px;
 }
 
+/* This code is for the dark mode footer */
 .darkMode .title,
 .darkMode .title-description,
 .darkMode .about-section,
@@ -362,11 +389,13 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 
+/* This code is for the dark mode footer */
 .darkMode .footer {
     background: #111 !important;
     color: #FFD700 !important;
 }
 
+/* This code is for the dark mode footer row */
 .darkMode .footer-title,
 .darkMode .footer-text,
 .darkMode .footerIcons {
@@ -374,21 +403,25 @@ body {
     background: transparent !important;
 }
 
+/* This code is for the dark mode footer icons */
 .darkMode .footerIcons:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
+/* This code is for the dark mode footer icons when hovered */
 .darkMode a,
 .darkMode a:visited {
     color: #FFD700 !important;
 }
 
+/* This code is for the dark mode background video */
 .darkMode #bg-video {
     opacity: 0.8;
     filter: grayscale(0.1) brightness(0.7);
 }
 
+/* This code is for the dark mode footer div */
 .darkMode .footerDiv {
     background: #111;
 }
@@ -402,6 +435,7 @@ body {
   100% {filter: none;}
 }
 
+/* This code is for the navigation link hover animation */
 @keyframes NavigationLinkHoverLinkAnimation {
   0%   {text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;}
   25%  {text-shadow: 2px 2px 4px black, 0 0 30px blue, 0 0 10px darkblue;}
@@ -410,6 +444,7 @@ body {
   100% {text-shadow: none;}
 }
 
+/* This code is for the navigation link hover underline animation */
 @keyframes underlineAppear {
     0% {
         width: 0;
@@ -431,6 +466,7 @@ body {
     }
 }
 
+/* This code is for the navigation link click animation */
 @keyframes NavigationClickLinkAnimation {
   0%   {bottom:0px;}
   25%  {bottom:3px;}
@@ -438,6 +474,8 @@ body {
   75%  {bottom:3px;}
   100%  {bottom:0px;}
 }
+
+/* --- DARK MODE STYLES --- */
 .darkMode,
 .darkMode body {
     background: #111 !important;
