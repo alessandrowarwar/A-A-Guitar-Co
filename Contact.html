@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <head>
+<script>
+console.log("=== DEBUG MODE DETECTION ===");
+var match = document.cookie.match(/(?:^|;\s*)mode=(darkMode|lightMode)/);
+var mode = match ? match[1] : "lightMode";
+console.log("Cookie mode found:", mode);
 
-   
+function setModeClass() {
+  if (document.body) {
+    console.log("Body classes before:", document.body.className);
+    if (!document.body.classList.contains(mode)) {
+      document.body.classList.add(mode);
+      console.log("Added mode class:", mode);
+    }
+    console.log("Body classes after:", document.body.className);
+    
+    // Set icons and logos based on mode
+    setTimeout(function() {
+      const CompanyLogo = document.querySelector('.navbar-brand img');
+      const iconImg = document.querySelector('.changeScreenModeIcon img');
+      
+      if (mode === 'darkMode') {
+        if (iconImg) iconImg.src = 'lightModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'CompanyLogoDark.png';
+      } else {
+        if (iconImg) iconImg.src = 'darkModeIcon.png';
+        if (CompanyLogo) CompanyLogo.src = 'CompanyLogo.png';
+      }
+    }, 100); // Small delay to ensure navbar is loaded
+    
+  } else {
+    console.log("Body not ready, retrying...");
+    setTimeout(setModeClass, 1);
+  }
+}
+setModeClass();
+</script>
    <style>
        .contact-content {
         background: rgba(18, 28, 85, 0.85);
@@ -70,7 +104,7 @@
 </head>
 <html>
 
-<body class="lightMode ContactPage">
+<body class="ContactPage">
     <!-- Navbar header inserted from Index.js -->
     <div id="header-placeholder"></div>
 
@@ -109,7 +143,7 @@
     				return "";
 }
 
-						function changeMode(){
+		function changeMode(){
 						let currentMode;
 						const iconImg = document.querySelector('.changeScreenModeIcon img');
                         const CompanyLogo = document.querySelector('.navbar-brand img');
@@ -137,32 +171,6 @@
 						}
 						setCookie('mode', currentMode, 30);
 					}
-
-					window.onload = function() {
-    					let savedMode = getCookie('mode');
-                        const CompanyLogo = document.querySelector('.navbar-brand img');
-						const iconImg = document.querySelector('.changeScreenModeIcon img');
-    					if (savedMode === 'darkMode') {
-        					document.body.classList.remove('lightMode');
-        					document.body.classList.add('darkMode');
-							if (iconImg) {
-								iconImg.src = 'lightModeIcon.png'; // dark mode icon
-							}
-                            if (CompanyLogo) {
-                                CompanyLogo.src = 'CompanyLogoDark.png'; // dark mode logo
-                            }
-                            
-    					} else if (savedMode === 'lightMode') {
-        					document.body.classList.remove('darkMode');
-        					document.body.classList.add('lightMode');
-							if (iconImg) {
-								iconImg.src = 'darkModeIcon.png'; // light mode icon
-							}
-                            if (CompanyLogo) {
-                                CompanyLogo.src = 'CompanyLogo.png'; // light mode logo
-                            }
-    					} 
-					};
 			</script>
             <!-- Navbar footer inserted from Index.js -->
             <div id="footer-placeholder"></div>
