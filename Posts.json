@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Introducing the A&A Signature Series",
+    "author": "Alessandro Warwar",
+    "date": "2025-01-15T00:00:00Z",
+    "category": "Guitar News",
+    "excerpt": "We are excited to announce the launch of our latest guitar model, the A&A Signature Series.",
+    "content": "<p>We are excited to announce the launch of our latest guitar model, the A&A Signature Series. This model features a unique blend of traditional craftsmanship and modern technology, offering unparalleled sound quality and playability.</p><h3>Key Features</h3><p>The Signature Series incorporates premium tonewoods, custom-wound pickups, and our proprietary neck construction technique for enhanced sustain and resonance.</p><p>Each guitar is meticulously crafted by our master luthiers, ensuring every detail meets our exacting standards. From the carefully selected maple neck to the custom-designed bridge system, every component is chosen for its contribution to the instrument's overall performance.</p>",
+    "published": true,
+    "tags": ["new-release", "signature-series", "craftsmanship"]
+  },
+  {
+    "id": 2,
+    "title": "The Art of Guitar Maintenance",
+    "author": "Anthony Romaniello",
+    "date": "2025-01-10T00:00:00Z",
+    "category": "Tips & Guides",
+    "excerpt": "Proper guitar maintenance is essential for preserving your instrument's tone and extending its lifespan.",
+    "content": "<p>Proper guitar maintenance is essential for preserving your instrument's tone and extending its lifespan. In this comprehensive guide, we'll walk you through the essential steps every guitarist should know.</p><h3>Daily Care Tips</h3><p>Regular cleaning and proper storage can prevent most common guitar issues. Learn the techniques professionals use to keep their instruments in pristine condition.</p><p>Start by wiping down your strings after each playing session. Use a clean, dry cloth to remove oils and moisture that can cause corrosion. Store your guitar in a case or on a proper stand, away from direct sunlight and extreme temperatures.</p>",
+    "published": true,
+    "tags": ["maintenance", "tips", "guitar-care"]
+  },
+  {
+    "id": 3,
+    "title": "Behind the Scenes: Our Workshop Tour",
+    "author": "A&A Team",
+    "date": "2025-01-05T00:00:00Z",
+    "category": "Company News",
+    "excerpt": "Take an exclusive look inside our guitar workshop where master craftsmen bring each instrument to life.",
+    "content": "<p>Take an exclusive look inside our guitar workshop where master craftsmen bring each instrument to life. From selecting premium woods to the final setup, discover the meticulous process behind every A&A guitar.</p><p>Our workshop combines traditional hand-tools with modern precision equipment, allowing us to achieve the perfect balance between artisanal craftsmanship and consistent quality.</p><h3>The Selection Process</h3><p>Every piece of wood is carefully inspected for grain patterns, density, and tonal qualities before being approved for use in our instruments.</p>",
+    "published": true,
+    "tags": ["workshop", "craftsmanship", "behind-the-scenes"]
+  }
+]
