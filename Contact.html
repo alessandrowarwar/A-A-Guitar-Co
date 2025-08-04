@@ -143,7 +143,9 @@ setModeClass();
     				return "";
 }
 
-		function changeMode(){
+        // Toggles between light and dark mode for the site
+        // Updates the body class, icon image, logo, and saves the mode in a cookie
+		        function changeMode(){
 						let currentMode;
 						const iconImg = document.querySelector('.changeScreenModeIcon img');
                         const CompanyLogo = document.querySelector('.navbar-brand img');
