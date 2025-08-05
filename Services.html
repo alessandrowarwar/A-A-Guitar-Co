@@ -46,6 +46,7 @@ function setModeClass() {
 setModeClass();
 </script>
     <style>
+        /* Footer styling */
         .services-icons-container {
             display: flex;                
             justify-content: center;      
@@ -82,6 +83,7 @@ setModeClass();
             transition: background 0.3s ease;
         }
 
+        /* Hover effect for buttons */
         .service-button:hover{
             background: #f0c040; 
         }   
@@ -104,36 +106,33 @@ setModeClass();
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
 
+        /* Dark mode overrides */
         .darkMode .service-button {
             color: #fff;
             background: #121c55;
         }
-
         .darkMode .service-button:hover {
             background: #24348a;
         }
-
         .darkMode .services-header-section {
             background: rgba(255,255,255,0.92);
             color: #121c55;
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
-
         .darkMode .services-header-title {
             color: #121c55;
         }
-
         .darkMode .services-header-overview {
             color: #24348a;
         }
 
+        /* General styles for the services header */
         .services-header-title {
             font-size: 2em;
             font-weight: bold;
             margin-bottom: 0.7em;
             color: #FFD700;
         }
-
         .services-header-overview {
             font-size: 1.15em;
             color: #fffbe6;
