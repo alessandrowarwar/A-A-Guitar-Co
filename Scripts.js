@@ -44,7 +44,7 @@
         const blogList = document.getElementById('blog-list');
 
         // Fetch blog posts from Posts.json
-        fetch('posts.json')
+        fetch('Posts.json')
             .then(response => response.json())
             .then(posts => {
                 posts.forEach(post => {
