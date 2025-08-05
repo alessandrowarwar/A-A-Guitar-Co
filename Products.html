@@ -38,6 +38,7 @@ function setModeClass() {
 setModeClass();
 </script>
     <style>
+        /* Products page specific styles */
         .products-container {
             background: rgba(18, 28, 85, 0.85);
             border-radius: 18px;
@@ -50,6 +51,7 @@ setModeClass();
             align-items: stretch;
         }
 
+        /* Each product card styling */
         .productCard {
             color: #FFD700;
             font-size: 1.3em;
@@ -64,14 +66,12 @@ setModeClass();
             flex-direction: column;
             align-items: center;
         }
-
         .product-name {
             color: #fffbe6;
             font-size: 0.98em;
             text-align: center;
             margin-bottom: 0;
         }
-
         .product-type {
             color: #fffbe6;
             font-size: 1.05em;
@@ -79,7 +79,6 @@ setModeClass();
             margin-bottom: 0.7em;
             text-align: center;
         }
-
         .product-price {
             color: #fffbe6;
             font-size: 0.98em;
@@ -96,7 +95,6 @@ setModeClass();
             padding: 1.5em 2em;
             text-align: center;
         }
-
         .products-header-title {
             font-size: 2em;
             font-weight: bold;
@@ -116,27 +114,28 @@ setModeClass();
             box-shadow: 0 4px 24px rgba(0,0,0,0.08);
         }
 
+        /* Dark mode overrides */
         body.darkMode .productCard {
             color: #1a237e;
             background: transparent;
         }
 
+        /* Dark mode product name, type, and price */
         body.darkMode .product-name,
         body.darkMode .product-type,
         body.darkMode .product-price {
             color: #1a237e;
         }
 
+        /* Dark mode header section */
         body.darkMode .products-header-section {
             background: rgba(255, 255, 255, 0.95);
             color: #1a237e;
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
-
         body.darkMode .products-header-title {
             color: #1a237e;
         }
-
         body.darkMode .products-header-overview {
             color: #333;
         }    </style>
@@ -164,7 +163,11 @@ setModeClass();
 </div>
 
 
- <!-- Main content -->
+<!-- Product images section:
+     - Each productCard contains an image, product name, price, and add to cart button.
+     - Images use external URLs and have inline styles for consistent sizing, aspect ratio, and rounded corners.
+     - The alt attribute describes each product for accessibility.
+-->
 <div class="products-container">
     <div class="productCard">
         <img src="https://images.ctfassets.net/m8onsx4mm13s/VnYZrwsAZm2WHJ7OKMmdt/9dcf800223b0aae55c3c0f6d4db74f53/ECJHFVEBNH3_front_copy.png?fit=fill&w=250&h=500" alt="A&A Horizon S1" style="width:70%; aspect-ratio:2/3; border-radius:10px; margin-bottom:1em; max-width:120px;">
@@ -409,13 +412,15 @@ setModeClass();
 </div>
 
 			<script>
+                    // Sets a cookie with the given name, value, and expiration in days
 					function setCookie(cname, cvalue, exdays) {
  					    const d = new Date();
   					    d.setTime(d.getTime() + (exdays*24*60*60*1000));
   				    	let expires = "expires="+ d.toUTCString();
   				    	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 					}
-
+                    
+                    // Retrieves the value of a cookie by name
 					function getCookie(cname) {
     					let name = cname + "=";
     					let decodedCookie = decodeURIComponent(document.cookie);
